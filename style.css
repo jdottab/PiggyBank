@@ -149,6 +149,12 @@ main{
     backdrop-filter:blur(7px);
     z-index: 10;
     display: none;
+    top: 0;
+}
+/*SET GOAL*/
+.set-goal{
+    justify-content: center;
+    margin: auto auto;
 }
 .submit-form{
     width: 325px;
@@ -371,10 +377,23 @@ main{
 .goal{
     text-align: center;
     position: relative;
-    top: 95%;
+    top: 80%;
 }
 /*MISCELLANEOUS*/
 /*COIN*/
+@keyframes fade-and-slide{
+    0%{
+        transform:translateX(10%);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
 .coin{
     width: 90px;
     height: 90px;
@@ -382,6 +401,12 @@ main{
     background-color: rgb(172, 172, 172);
     overflow: hidden;
     position: relative;
+    margin: 0px;
+    left: 60%;
+    top: 15%;
+    box-shadow: 3px 5px rgb(122, 122, 122);
+    opacity: 0;
+    z-index: 10;
 }
 .coin::before{
     content: '';
