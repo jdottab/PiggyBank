@@ -1,0 +1,394 @@
+html{
+    height: 100vh;
+    font-family: 'Short Stack', cursive, sans-serif;
+}
+body{
+    margin: 0;
+    height: 100%;
+}
+main{
+    background-color: #86d2db;
+    padding: none;
+    margin: none;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    display: flex;
+    margin: auto auto;
+    flex-direction: column;
+    background-color: transparent;
+    position: absolute;
+    z-index: 5;
+    right: 100px;
+    bottom: 20%;
+}
+.nav{
+    border: solid 1px #f07cbf;
+    border-radius: 15px;
+    padding: 10px 5px;
+    background-color: #f07cbf;
+    text-align: center;
+    margin: 50px;
+}
+.nav:hover{
+    cursor: pointer;
+}
+.nav1{
+    position: relative;
+    right: 20px;
+}
+.nav2{
+    position: relative;
+    left: 15px;
+}
+.nav3{
+    position: relative;
+    right: 20px;
+}
+.title-strip{
+    position: absolute;
+    width: 100%;
+    height: fit-content;
+}
+.title{
+    text-align: center;
+    font-family: 'Fredoka One', cursive;
+    margin: auto;
+    font-size: 3em;
+}
+.total{
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 90px;
+    width: 100%;
+}
+.ttl-txt{
+    display: inline-block;
+    text-align: center;
+}
+.piggybank{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+}
+.body{
+    background-color: #f07cbf;
+    width: 500px;
+    height: 425px;
+    border-radius: 50%;
+}
+.nose{
+    background-color: #f07cbf;
+    width: 75px;
+    height: 70px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 220px;
+    right: 30px;
+}
+.leg{
+    background-color: #f07cbf;
+    width: 70px;
+    height: 30px;
+    position: absolute; 
+    bottom: 65px;
+}
+.leg.leg1{
+    left: 35%;
+}
+.leg.leg2{
+    left: 50%;
+}
+.leg::before{
+    content: '';
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    transform: skewY(20deg);
+    bottom: 0px;
+    right: 0px;
+    background-color: #f07cbf;
+}
+.leg::after{
+    content: '';
+    width: 90%;
+    height: 80%;
+    transform: skewY(340deg);
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #f07cbf;
+}
+.eye{
+    position: absolute;
+    background-color: #000000;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    top: 200px;
+    left: 50px;
+    z-index: 5;
+}
+.coin-slot{
+    position: absolute;
+    height: 8px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: #000000;
+    top: 20px;
+    left: 200px;
+}
+.page{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    background-color: rgba(134, 210, 219, .2);
+    backdrop-filter:blur(7px);
+    z-index: 10;
+    display: none;
+}
+.submit-form{
+    width: 325px;
+    height: 375px;
+    text-align: center;
+    margin: auto auto;
+    position: relative;
+    top: 300px;
+    background-color: #f07cbf;
+    border: solid 1px #ffffff;
+    border-radius: 15px;
+}
+.numberpad-display{
+    width: 200px;
+    margin: auto auto;
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 15px;
+}
+.numberpad{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-evenly;
+    padding: 10px;
+}
+.keys{
+    margin: 5px 25px;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(240, 189, 219, 0.508);
+}
+.key0{
+    grid-column: 1 / 4;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 30px;
+    left: 112px;
+}
+.keys:hover{
+    background-color: rgba(240, 189, 219, 0.801);
+    cursor: pointer;
+}
+.form-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    bottom: 20px;
+}
+.confirm-btn{
+    background-color: #87db86;
+    position: absolute;
+    left: 35px;
+}
+.confirm-btn::before{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 15px;
+    height: 5px;
+    top: 50%;
+    left: 20%;
+    border-radius: 5px;
+    transform: rotateZ(45deg);
+}
+.confirm-btn::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 30px;
+    height: 5px;
+    top: 40.5%;
+    right: 10%;
+    border-radius: 5px;
+    transform: rotateZ(-45deg);
+}
+.cancel-btn{
+    background-color: #e37d7d;
+    position: absolute;
+    right: 35px;
+}
+.cancel-btn::before{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 25px;
+    height: 5px;
+    top: 45%;
+    left: 25%;
+    border-radius: 5px;
+    transform: rotateZ(45deg);
+}
+.cancel-btn::after{
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 25px;
+    height: 5px;
+    top: 45%;
+    left: 25%;
+    border-radius: 5px;
+    transform: rotateZ(-45deg);
+}
+/*DEPOSIT*/
+.deposit{
+    text-align: center;
+    justify-content: center;
+    display: none;
+    margin: auto auto;
+}
+.deposit-content{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+.prices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.price{
+    text-align: center;
+    align-items: center;
+    margin: auto auto;
+    padding: auto auto;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    background-color: #f07cbf;
+}
+.price:hover{
+    cursor: pointer;
+}
+.custom-price{
+    position: absolute;
+    bottom: 30%;
+    display: none;
+}
+.custom-numpad-display{
+    width: 200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 15px;
+}
+.ckys{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-evenly;
+}
+.custom-keys{
+    margin: 5px 29px;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(240, 189, 219, 0.508);
+}
+.custom-keys:hover{
+    cursor: pointer;
+    background-color: rgba(240, 189, 219, 0.801);
+}
+.ck0{
+    grid-column: 1 / 4;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 108px;
+}
+/*WITHDRAW*/
+.withdraw{
+    text-align: center;
+    justify-content: center;
+    display: none;
+    margin: auto auto;
+}
+.withdraw-content{
+    position: relative;
+    top: 30%;
+    width: 100%;
+    height: fit-content;
+}
+.withdraw-form{
+    position: relative;
+    top: 30%;
+}
+.withdraw-numpad-display{
+    width: 200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    height: 30px;
+    border-radius: 15px;
+}
+.wkys{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: space-evenly;
+}
+.wdrw-keys{
+    margin: 5px 29px;
+    border-radius: 50%;
+    padding: 15px;
+    text-align: center;
+    background-color: rgba(240, 189, 219, 0.508);
+}
+.wdrw-keys:hover{
+    cursor: pointer;
+    background-color: rgba(240, 189, 219, 0.801);
+}
+.wky0{
+    grid-column: 1 / 4;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 60px;
+    left: 108px;
+}
+/*GOAL*/
+.goal{
+    text-align: center;
+    position: relative;
+    top: 95%;
+}
+/*MISCELLANEOUS*/
+/*COIN*/
+.coin{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: rgb(172, 172, 172);
+    overflow: hidden;
+    position: relative;
+}
+.coin::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 10px;
+    background-color: rgba(230, 230, 230, 0.337);
+    transform: rotateZ(45deg);
+    bottom: 60%;
+}

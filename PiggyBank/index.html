@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Short+Stack&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <div class="nav nav1" id="setgoal">Set Goal</div>
+            <div class="nav nav2" id="deposit">Deposit</div>
+            <div class="nav nav3" id="withdraw">Withdraw</div>
+        </nav>
+        <div class="title-strip">
+            <h1 class="title">PiggyBank</h1>
+        </div>
+        
+        <main>
+            <h2 class="total">
+                <div class="ttl-txt">Total: $<span class="amount">0</span></div>
+            </h2>
+            <div class="coin"></div>
+            <div class="piggybank">
+                <div class="body part"></div>
+                <div class="nose part"></div>
+                <div class="tail part"></div>
+                <div class="legs part">
+                    <div class="leg leg1"></div>
+                    <div class="leg leg2"></div>
+                </div>
+                <div class="amount"></div>
+                <div class="eye part"></div>
+                <div class="coin-slot"></div>
+            </div>
+            <div class="page set-goal" id="setgoal">
+                <div class="submit-form">
+                    <h3>Set Your Goal!</h3>
+                    <div class="numberpad-display"></div>
+                    <div class="numberpad">
+                        <div class="keys key1">1</div>
+                        <div class="keys key2">2</div>
+                        <div class="keys key3">3</div>
+                        <div class="keys key4">4</div>
+                        <div class="keys key5">5</div>
+                        <div class="keys key6">6</div>
+                        <div class="keys key7">7</div>
+                        <div class="keys key8">8</div>
+                        <div class="keys key9">9</div>
+                        <div class="keys key0">0</div>
+                    </div>
+                    <div class="confirm-btn form-btn" onclick="ConfirmGoal()"></div>
+                    <div class="cancel-btn form-btn" onclick="CloseOut()"></div>
+                </div>
+            </div>
+            <div class="page withdraw" id="withdraw">
+                <div class="withdraw-content">
+                    <h3>How much do you want to withdraw?</h3>
+                    <div class="withdraw-form submit-form">
+                        <div class="withdraw-numpad-display"></div>
+                        <div class="wkys">
+                            <div class="wdrw-keys wky1">1</div>
+                            <div class="wdrw-keys wky2">2</div>
+                            <div class="wdrw-keys wky3">3</div>
+                            <div class="wdrw-keys wky4">4</div>
+                            <div class="wdrw-keys wky5">5</div>
+                            <div class="wdrw-keys wky6">6</div>
+                            <div class="wdrw-keys wky7">7</div>
+                            <div class="wdrw-keys wky8">8</div>
+                            <div class="wdrw-keys wky9">9</div>
+                            <div class="wdrw-keys wky0">0</div>
+                        </div>
+                        <div class="confirm-btn form-btn" onclick="ConfirmWD()"></div>
+                        <div class="cancel-btn form-btn" onclick="CloseOutWD()"></div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="page deposit" id="deposit">
+                <div class="deposit-content">
+                    <h3>How much do you want to deposit into your piggy bank?</h3>
+                    <div class="prices">
+                        <div class="price">$<span class="price1 num">5</span></div>
+                        <div class="price">$<span class="price2 num">10</span></div>
+                        <div class="price">$<span class="price3 num">25</span></div>
+                        <div class="price">$<span class="price4 num">50</span></div>
+                        <div class="price">$<span class="price5 num">100</span></div>
+                        <div class="price custom">Custom</div>
+                        <div class="custom-price submit-form">
+                            <div class="custom-numpad-display"></div>
+                            <div class="ckys">
+                                <div class="custom-keys ck1">1</div>
+                                <div class="custom-keys ck2">2</div>
+                                <div class="custom-keys ck3">3</div>
+                                <div class="custom-keys ck4">4</div>
+                                <div class="custom-keys ck5">5</div>
+                                <div class="custom-keys ck6">6</div>
+                                <div class="custom-keys ck7">7</div>
+                                <div class="custom-keys ck8">8</div>
+                                <div class="custom-keys ck9">9</div>
+                                <div class="custom-keys ck0">0</div>
+                            </div>
+                            <div class="confirm-btn form-btn" onclick="ConfirmCustom()"></div>
+                            <div class="cancel-btn form-btn" onclick="CloseOutDeposit()"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="goal">Goal: $<span class="goal-amnt">0</span></div>
+        </main>
+        <script src="index.js"></script>
+        
+    </body>
+</html>
