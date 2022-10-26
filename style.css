@@ -71,7 +71,8 @@ main{
 .piggybank{
     position: absolute;
     top: 25%;
-    left: 30%;
+    left: calc(25% - 50px);
+    margin: 0px 100px;
 }
 .body{
     background-color: #f07cbf;
@@ -416,4 +417,19 @@ main{
     background-color: rgba(230, 230, 230, 0.337);
     transform: rotateZ(45deg);
     bottom: 60%;
+}
+/*RESPONSIVE DESIGN*/
+
+@media (max-width: 1064px){
+    .navbar{
+        flex-direction: row;
+        top: 10%;
+        align-items: center;
+        right: 20%;
+        height:fit-content;
+        margin: 0px auto;
+    }
+    .nav1, .nav2, .nav3{
+        position: static;
+    }
 }
